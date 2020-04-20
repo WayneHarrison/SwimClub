@@ -145,7 +145,7 @@ session_start();
                 </div>
                 <div>
                   <button class="btn btn-outline-light my-2 my-sm-0" name="loginButton" type="submit" value="Login">Login</button>
-                  <a class="btn btn-outline-light my-2 my-sm-0" type="submit" href="register.php">Register</a>
+                  <a class="btn btn-outline-light my-2 my-sm-0" href="register.php">Register</a>
                 </div>
               </form>';
             }
