@@ -135,7 +135,7 @@ session_start();
                   </div>
                   <input type="text" name="emailField" id="emailField" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">
+                    <span class="input-group-text" id="basic-addon2">
                       <i class="material-icons">
                         security
                       </i>
@@ -145,7 +145,7 @@ session_start();
                 </div>
                 <div>
                   <button class="btn btn-outline-light my-2 my-sm-0" name="loginButton" type="submit" value="Login">Login</button>
-                  <a type="button" class="btn btn-outline-light my-2 my-sm-0" type="submit" href="register.php">Register</a>
+                  <a class="btn btn-outline-light my-2 my-sm-0" type="submit" href="register.php">Register</a>
                 </div>
               </form>';
             }

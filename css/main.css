@@ -17,7 +17,6 @@
 .centerjumbo {
   text-align: center;
   align-items: center;
-  border-bottom: 1px solid #e5e5e5;
 
 }
 
@@ -28,4 +27,8 @@
 .rounded{
   border-radius: 100px;
 
+}
+.half {
+  height:50%;
+  width:50%;
 }
