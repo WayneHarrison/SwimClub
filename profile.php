@@ -1,10 +1,12 @@
 <?php
+
+if (!ISSET($_SESSION['usersID'])){
+  header("Location:index.php?error=notauth");
+}
 $title = "Profile";
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if (!ISSET($_SESSION['usersID'])){
-  header("Location: ../index.php");
-}
+
 $uID = $_SESSION['usersID'];
 //selects Results
   $sql = "SELECT * FROM users WHERE id='$uID'";

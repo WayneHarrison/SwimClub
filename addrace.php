@@ -1,9 +1,10 @@
-<?php $title = 'Add Race';
+<?php
+if($_SESSION['usersAcc'] != "Coach" || $_SESSION['usersAcc'] != "Official"){
+  header("Location ../index.php?error=notauth");
+}
+ $title = 'Add Race';
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if($_SESSION['usersAcc'] != "Coach" || $_SESSION['usersAcc'] != "Official"){
-  header("Location ../index.php");
-}
 $uID = $_GET['ID'];?>
 <div class="jumbotron-fluid" align="center">
     <div aria-label="breadcrumb">

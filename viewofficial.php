@@ -1,9 +1,11 @@
-<?php $title = 'View';
+<?php
+if ($_SESSION['usersAcc'] != "Official"){
+  header("Location:index.php?error=notauth");
+}
+ $title = 'View';
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if ($_SESSION['usersAcc'] != "Official"){
-  header("Location: ../index.php");
-}
+
 $origin = $_GET['p'];
 $uID = $_SESSION['usersID'];
 $compareID = intval($_GET['ID']);

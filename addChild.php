@@ -1,9 +1,10 @@
 <?php
+if(!ISSET($_SESSION['usersID']) && $_SESSION['usersAcc'] != "Parent"){
+  header("Location:index.php?error=notauth");
+}
  $title = 'Add Child';
 include("includes/header.php");
-if($_SESSION['usersAcc'] != "Parent"){
-  header("Location ../index.php");
-}?>
+?>
 <div class="jumbotron-fluid">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">

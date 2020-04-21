@@ -1,9 +1,11 @@
-<?php $title = 'Child Info';
+<?php
+if($_SESSION['usersAcc'] != "Parent"){
+  header("Location:index.php?error=notauth");
+}
+ $title = 'Child Info';
 include("includes/header.php");
  include("includes/dbh.inc.php");
- if($_SESSION['usersAcc'] != "Parent"){
-   header("Location ../index.php");
- }
+
 
   $cID = intval($_GET['ID']);
  ?>

@@ -1,9 +1,11 @@
-<?php $title = 'Stats';
+<?php
+if (!ISSET($_SESSION['usersID'])){
+  header("Location:index.php?error=notauth");
+}
+$title = 'Stats';
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if (!ISSET($_SESSION['usersID'])){
-  header("Location: ../index.php");
-}
+
 $uID = $_SESSION['usersID'];?>
 <div class="jumbotron-fluid" align="center">
     <div aria-label="breadcrumb">

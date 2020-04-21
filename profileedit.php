@@ -1,10 +1,12 @@
-<?php $title = 'Edit';
+<?php
+if (!ISSET($_SESSION['usersID'])){
+  header("Location:index.php?error=notauth");
+}
+$title = 'Edit';
  include("includes/header.php");
  include("includes/dbh.inc.php");
  $uID = $_SESSION['usersID'];
- if (!ISSET($_SESSION['usersID'])){
-   header("Location: ../index.php");
- }
+
  $sql = "SELECT * FROM users WHERE id='$uID'";
  $result= mysqli_query($conn, $sql);
  if(mysqli_num_rows($result)) {

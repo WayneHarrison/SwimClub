@@ -1,9 +1,10 @@
-<?php $title = 'My Swimmers';
+<?php
+if($_SESSION['usersAcc'] != "Coach"){
+  header("Location:index.php?error=notauth");
+} $title = 'My Swimmers';
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if($_SESSION['usersAcc'] != "Coach"){
-  header("Location ../index.php?");
-}
+
 $uID = $_SESSION['usersID'];?>
 <div class="jumbotron-fluid">
   <div aria-label="breadcrumb">

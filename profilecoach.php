@@ -1,10 +1,11 @@
 <?php
+if($_SESSION['usersAcc'] != "Coach"){
+  header("Location:index.php?error=notauth");
+}
 $title="Profile";
 include("includes/header.php");
 include("includes/dbh.inc.php");
-if($_SESSION['usersAcc'] != "Coach"){
-  header("Location ../index.php");
-}
+
 $uID = $_SESSION['usersID'];
 //selects Results
   $sql = "SELECT * FROM users WHERE id='$uID'";
