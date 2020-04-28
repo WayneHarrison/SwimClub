@@ -84,7 +84,7 @@
             </div>
             <div class="form-group">
               <label for="emailField">Email Address</label>
-              <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp" placeholder="Email" name="email">
+              <input type="email" class="form-control" id="remailField" placeholder="Email" name="remail">
             </div>
               <div class="form-group">
                 <label for="accType">Account Type</label>

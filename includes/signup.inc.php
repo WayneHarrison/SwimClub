@@ -9,7 +9,7 @@ if (isset($_POST['registerButton'])) {
   $postcode = $_POST['postcode'];
   $dob = $_POST['dob'];
   $phone = $_POST['phone'];
-  $email = $_POST['email'];
+  $email = $_POST['remail'];
   $password = $_POST['password'];
   $cpassword = $_POST['cpassword'];
   $accType = $_POST['accType'];
