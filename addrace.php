@@ -1,10 +1,9 @@
 <?php
-$title = 'Add Race';
+$title = 'AddRace';
 include("includes/header.php");
-if($_SESSION['usersAcc'] != "Coach" OR $_SESSION['usersAcc'] != "Official"){
+if($_SESSION['usersAcc'] != "Coach" || $_SESSION['usersAcc'] != "Official"){
   header("Location ../index.php?error=notauth");
 }
-
 include("includes/dbh.inc.php");
 $uID = $_GET['ID'];?>
 <div class="jumbotron-fluid centerjumbo">
