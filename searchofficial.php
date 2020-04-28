@@ -40,8 +40,8 @@ $searchterm = $_POST['search']?>
               <button class="btn btn-outline-dark my-2 my-sm-0" onclick="return confirm('Are you sure?');" name="deleteUser" type="submit">Delete</button></li>
             </form>
         </td>
-        <td><a href="addrace.php?ID=<?php echo $userResult['id']; ?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</a></td>
-        <td><a href="viewofficial.php?ID=<?php echo $userResult['id'];?>&p=c" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</a></td>
+        <td><a href="addrace.php?ID=<?php echo $userResult['id']; ?>" class="btn btn-outline-dark my-2 my-sm-0">Add Results</a></td>
+        <td><a href="viewofficial.php?ID=<?php echo $userResult['id'];?>&p=c" class="btn btn-outline-dark my-2 my-sm-0">View</a></td>
       </tr>
       <?php endwhile;
     else: echo'<h3>No results matching your search!</h3>';
