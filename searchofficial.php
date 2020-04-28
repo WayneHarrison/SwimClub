@@ -26,13 +26,13 @@ $searchterm = $_POST['search']?>
       <th scope="col"></th>
       <th scope="col"></th>
     </thead>
+    <tbody>
   <?php
   $search = mysqli_real_escape_string($conn, $searchterm );
   $sql = "SELECT * FROM users WHERE name LIKE '%$search%' AND id !='$uID'";
   $result= mysqli_query($conn, $sql);
   if(mysqli_num_rows($result)>0):
     while($userResult = mysqli_fetch_array($result)):?>
-    <tbody>
       <tr>
         <td><?php echo $userResult['name'];?></td>
         <td><?php echo $userResult['dob'];?></td>

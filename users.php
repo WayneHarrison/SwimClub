@@ -52,6 +52,7 @@ $uID = $_SESSION['usersID'];
         <th scope="col"></th>
         <th scope="col"></th>
       </thead>
+      <tbody>
       <?php
       $sql2 = "SELECT * FROM users where id != $uID";
       $result2 = mysqli_query($conn, $sql2);
@@ -59,7 +60,6 @@ $uID = $_SESSION['usersID'];
         while ($coachResult = mysqli_fetch_array($result2)):
 
       ?>
-      <tbody>
         <tr>
           <th scope="row"><?php echo $coachResult['name'];?></th>
           <td><?php echo $coachResult['dob'];?></td>

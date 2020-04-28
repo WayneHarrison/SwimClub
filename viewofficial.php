@@ -52,13 +52,13 @@ if(mysqli_num_rows($result3)) {
           <th scope="col">Time</th>
           <th scope="col">Date</th>
         </thead>
+        <tbody>
         <?php
         $sql2 = "SELECT * FROM laps WHERE uid='$compareID' AND YEARWEEK(lapDate) = YEARWEEK(NOW())";
         $result2 = mysqli_query($conn, $sql2);
         if(mysqli_num_rows($result2)>0) :
           while($lapResult2 = mysqli_fetch_array($result2)):
         ?>
-        <tbody>
           <tr>
             <td><?php echo $lapResult2['lapTime'];?> seconds.</td>
             <td><?php echo $lapResult2['lapDate'];?></td>
@@ -76,13 +76,13 @@ if(mysqli_num_rows($result3)) {
             <th scope="col">Time</th>
             <th scope="col">Date</th>
           </thead>
+          <tbody>
           <?php
           $sql2 = "SELECT * FROM laps WHERE uid='$compareID' AND YEARWEEK(lapDate) != YEARWEEK(NOW())";
           $result2 = mysqli_query($conn, $sql2);
           if(mysqli_num_rows($result2)>0) :
             while($lapResult2 = mysqli_fetch_array($result2)):
           ?>
-          <tbody>
             <tr>
               <td><?php echo $lapResult2['lapTime'];?> seconds.</td>
               <td><?php echo $lapResult2['lapDate'];?></td>
@@ -106,13 +106,13 @@ if(mysqli_num_rows($result3)) {
             <th scope="col">Laps</th>
             <th scope="col">Fastest Lap</th>
           </thead>
+          <tbody>
           <?php
           $sql2 = "SELECT * FROM race WHERE userID=$compareID";
           $result2 = mysqli_query($conn, $sql2);
           if(mysqli_num_rows($result2)>0) :
             while($lapResult2 = mysqli_fetch_array($result2)):
           ?>
-          <tbody>
             <tr>
               <td><?php echo $lapResult2['rtime'];?> seconds.</td>
               <td><?php echo $lapResult2['rdate'];?></td>
@@ -120,7 +120,7 @@ if(mysqli_num_rows($result3)) {
               <td><?php echo $lapResult2['fastest'];?> seconds.</td>
             </tr>
           <?php endwhile;
-        else: echo '<p>No recent laps.</p>';
+        else: echo '<td>No recent laps.</td>';
         endif;?>
         </tbody>
       </table>

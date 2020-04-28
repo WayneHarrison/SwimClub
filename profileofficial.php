@@ -54,13 +54,13 @@ $uID = $_SESSION['usersID'];
               <th scope="col">Fastest Lap</th>
               <th scope="col"></th>
             </thead>
+            <tbody>
             <?php
             $sql2 = "SELECT * FROM race WHERE YEARWEEK(rdate) = YEARWEEK(NOW())";
             $result2 = mysqli_query($conn, $sql2);
             if(mysqli_num_rows($result2)>0) :
               while($lapResult2 = mysqli_fetch_array($result2)):
             ?>
-            <tbody>
               <tr>
                 <td><?php echo $lapResult2['rtime'];?> seconds.</td>
                 <td><?php echo $lapResult2['rdate'];?></td>

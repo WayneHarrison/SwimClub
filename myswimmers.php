@@ -39,6 +39,7 @@ $uID = $_SESSION['usersID'];?>
             <th scope="col"></th>
             <th scope="col"></th>
           </thead>
+          <tbody>
           <?php
           $sql2 = "SELECT * FROM users WHERE cID='$uID'";
           $result2 = mysqli_query($conn, $sql2);
@@ -46,7 +47,6 @@ $uID = $_SESSION['usersID'];?>
             while ($coachResult = mysqli_fetch_array($result2)):
 
           ?>
-          <tbody>
             <tr>
               <td><?php echo $coachResult['name'];?></td>
               <td><?php echo $coachResult['dob'];?></td>

@@ -115,13 +115,13 @@ $uID = $_SESSION['usersID'];?>
           <th scope="col">Laps</th>
           <th scope="col">Fastest Lap</th>
         </thead>
+        <tbody>
         <?php
         $sql2 = "SELECT * FROM race WHERE userID=$uID";
         $result2 = mysqli_query($conn, $sql2);
         if(mysqli_num_rows($result2)>0) :
           while($lapResult2 = mysqli_fetch_array($result2)):
         ?>
-        <tbody>
           <tr>
             <td><?php echo $lapResult2['rtime'];?> seconds.</td>
             <td><?php echo $lapResult2['rdate'];?></td>

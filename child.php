@@ -38,13 +38,13 @@ $uID = $_SESSION['usersID'];}?>
             <th scope="col"></th>
             <th scope ="col"></th>
           </thead>
+          <tbody>          
           <?php
           $sql2 = "SELECT * FROM users WHERE pID='$uID'";
           $result2 = mysqli_query($conn, $sql2);
           if(mysqli_num_rows($result2)>0) :
             while($childResult = mysqli_fetch_array($result2)):
           ?>
-          <tbody>
             <tr>
               <td><?php echo $childResult['name'];?></td>
               <td><a href="view.php?ID=<?php echo $childResult['id'];?>&p=ch"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</button></a></td>
