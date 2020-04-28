@@ -127,3 +127,4 @@ if(mysqli_num_rows($result3)) {
       </div>
     </div>
 </div>
+<?php include("includes/footer.php");?>

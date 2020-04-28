@@ -38,7 +38,7 @@ $uID = $_SESSION['usersID'];}?>
             <th scope="col"></th>
             <th scope ="col"></th>
           </thead>
-          <tbody>          
+          <tbody>
           <?php
           $sql2 = "SELECT * FROM users WHERE pID='$uID'";
           $result2 = mysqli_query($conn, $sql2);
@@ -71,3 +71,4 @@ $uID = $_SESSION['usersID'];}?>
     </div>
   </div>
 </div>
+<?php include("includes/footer.php");?>
