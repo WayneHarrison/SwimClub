@@ -34,10 +34,10 @@ $searchterm = $_POST['search']?>
     while($userResult = mysqli_fetch_array($result)):?>
     <tbody>
       <tr>
-        <th scope="row"><?php echo $userResult['name'];?></th>
+        <td><?php echo $userResult['name'];?></td>
         <td><?php echo $userResult['dob'];?></td>
         <td><form method="post" action="includes/remove.inc.php?ID=<?php echo $userResult['id']; ?>">
-              <button class="btn btn-outline-dark my-2 my-sm-0" onclick="return confirm('Are you sure?');" name="deleteUser" type="submit">Delete</button></li>
+              <button class="btn btn-outline-dark my-2 my-sm-0" onclick="return confirm('Are you sure?');" name="deleteUser" type="submit">Delete</button>
             </form>
         </td>
         <td><a href="addrace.php?ID=<?php echo $userResult['id']; ?>" class="btn btn-outline-dark my-2 my-sm-0">Add Results</a></td>

@@ -48,7 +48,7 @@ $uID = $_SESSION['usersID'];?>
           ?>
           <tbody>
             <tr>
-              <th scope="row"><?php echo $coachResult['name'];?></th>
+              <td><?php echo $coachResult['name'];?></td>
               <td><?php echo $coachResult['dob'];?></td>
               <td><form method="post" action="includes/remove.inc.php?ID=<?php echo $coachResult['id']; ?>">
                     <button class="btn btn-outline-dark my-2 my-sm-0" name="deleteSwimmer" type="submit">Delete</button></li>
@@ -61,7 +61,7 @@ $uID = $_SESSION['usersID'];?>
 
 
           <?php endwhile;
-        else: echo '<p>No registered swimmers.</p>';
+        else: echo '<td>No registered swimmers.</td>';
         endif;?>
       </tbody>
       </table>

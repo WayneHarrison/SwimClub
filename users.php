@@ -74,7 +74,7 @@ $uID = $_SESSION['usersID'];
 
 
       <?php endwhile;
-    else: echo '<p>No users.</p>';
+    else: echo '<td>No users.</td>';
     endif;?>
   </tbody>
   </table>

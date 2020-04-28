@@ -46,7 +46,7 @@ $uID = $_SESSION['usersID'];}?>
           ?>
           <tbody>
             <tr>
-              <th scope="row"><?php echo $childResult['name'];?></th>
+              <td><?php echo $childResult['name'];?></td>
               <td><a href="view.php?ID=<?php echo $childResult['id'];?>&p=ch"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</button></a></td>
               <td><a href="childinfo.php?ID=<?php echo $childResult['id']; ?>"><button class="btn btn-outline-dark my-2 my-sm-0" name="viewChild" type="submit">Add Lap</button></a></td>
               <td><a href="childedit.php?ID=<?php echo $childResult['id']; ?>"><button class="btn btn-outline-dark my-2 my-sm-0" name="editChild" type="submit">Edit</button></a></td>
