@@ -41,6 +41,7 @@ $searchterm = $_POST['search']?>
       <?php endwhile;
     else: echo'<h3>No results matching your search!</h3>';
     endif;?>
+    </tbody>
 
 </div>
 
