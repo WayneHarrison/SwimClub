@@ -1,5 +1,5 @@
 <?php $title = 'Register'; include("includes/header.php");?>
-<div class="jumbotron-fluid" align="center">
+<div class="jumbotron-fluid" class="centerjumbo">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -69,8 +69,8 @@
               <input type="text" class="form-control" id="pcField" placeholder="Postcode" name="postcode">
             </div>
             <div class="form-group">
-              <label for="passwordField">Password</label>
-              <input type="password" class="form-control" id="passwordField" placeholder="Password" name="password">
+              <label for="rpasswordField">Password</label>
+              <input type="password" class="form-control" id="rpasswordField" placeholder="Password" name="rpassword">
             </div>
           </div>
           <div class="col">

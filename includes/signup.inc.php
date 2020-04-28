@@ -10,7 +10,7 @@ if (isset($_POST['registerButton'])) {
   $dob = $_POST['dob'];
   $phone = $_POST['phone'];
   $email = $_POST['remail'];
-  $password = $_POST['password'];
+  $password = $_POST['rpassword'];
   $cpassword = $_POST['cpassword'];
   $accType = $_POST['accType'];
 
