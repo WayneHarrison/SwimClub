@@ -1,9 +1,10 @@
 <?php
+$title = 'Edit';
+include("includes/header.php");
 if($_SESSION['usersAcc'] != "Parent"){
   header("Location:index.php?error=notauth");
 }
-$title = 'Edit';
-include("includes/header.php");
+
 include("includes/dbh.inc.php");
 $cID = intval($_GET['ID']);
 $sql = "SELECT * FROM users WHERE id='$cID'";

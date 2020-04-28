@@ -1,9 +1,10 @@
 <?php
+$title = 'View';
+include("includes/header.php");
 if ($_SESSION['usersAcc'] != "Official"){
   header("Location:index.php?error=notauth");
 }
- $title = 'View';
-include("includes/header.php");
+
 include("includes/dbh.inc.php");
 
 $origin = $_GET['p'];

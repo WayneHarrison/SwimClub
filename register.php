@@ -1,5 +1,5 @@
 <?php $title = 'Register'; include("includes/header.php");?>
-<div class="jumbotron-fluid centerjumbo">
+<div class="jumbotron-fluid" class="centerjumbo">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>

@@ -1,8 +1,9 @@
 <?php
+$title = 'My Swimmers';
+include("includes/header.php");
 if($_SESSION['usersAcc'] != "Coach"){
   header("Location:index.php?error=notauth");
-} $title = 'My Swimmers';
-include("includes/header.php");
+}
 include("includes/dbh.inc.php");
 
 $uID = $_SESSION['usersID'];?>

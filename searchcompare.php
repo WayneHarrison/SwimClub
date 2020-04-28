@@ -1,11 +1,12 @@
 <?php
+$title="Search";
+include('includes/header.php');
 if (!ISSET($_SESSION['usersID'])){
   header("Location:index.php?error=notauth");
 }
-$title="Search";
-include('includes/dbh.inc.php');
-include('includes/header.php');
 
+
+include('includes/dbh.inc.php');
 $uID = $_SESSION['usersID'];
 $searchterm = $_POST['search']?>
 <div class="jumbotron-fluid" align="center">

@@ -1,9 +1,10 @@
 <?php
+$title = 'Stats';
+include("includes/header.php");
 if (!ISSET($_SESSION['usersID'])){
   header("Location:index.php?error=notauth");
 }
-$title = 'Stats';
-include("includes/header.php");
+
 include("includes/dbh.inc.php");
 
 $uID = $_SESSION['usersID'];?>

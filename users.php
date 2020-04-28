@@ -1,9 +1,10 @@
 <?php
+$title="Users";
+include('includes/header.php');
 if($_SESSION['usersAcc'] != "Official"){
   header("Location:index.php?error=notauth");
 }
-$title="Users";
-include('includes/header.php');
+
 include('includes/dbh.inc.php');
 
 $uID = $_SESSION['usersID'];

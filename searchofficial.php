@@ -1,10 +1,12 @@
 <?php
+$title="Search";
+include('includes/header.php');
 if($_SESSION['usersAcc'] != "Official"){
   header("Location:index.php?error=notauth");
 }
-$title="Search";
+
 include('includes/dbh.inc.php');
-include('includes/header.php');
+
 
 $uID = $_SESSION['usersID'];
 $searchterm = $_POST['search']?>

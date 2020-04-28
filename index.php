@@ -1,4 +1,5 @@
-<?php $title = 'Index'; include("includes/header.php");?>
+<?php $title = 'Index'; include("includes/header.php");
+?>
 
 <div class="jumbotron-fluid">
   <div aria-label="breadcrumb">

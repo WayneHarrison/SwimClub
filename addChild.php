@@ -1,9 +1,9 @@
 <?php
+$title = 'Add Child';
+include("includes/header.php");
 if(!ISSET($_SESSION['usersID']) && $_SESSION['usersAcc'] != "Parent"){
   header("Location:index.php?error=notauth");
 }
- $title = 'Add Child';
-include("includes/header.php");
 ?>
 <div class="jumbotron-fluid">
   <div aria-label="breadcrumb">
