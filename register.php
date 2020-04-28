@@ -102,7 +102,7 @@
               </div>
           </div>
         </div>
-        <div class="float-center">
+        <div class="centerjumbo">
           <button class="btn btn-outline-dark my-2 my-sm-0" name="registerButton" type="submit">Submit</button>
         </div>
       </fieldset>
