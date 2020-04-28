@@ -1,7 +1,7 @@
 <?php
 $title = 'Add Race';
 include("includes/header.php");
-if($_SESSION['usersAcc'] != "Coach" || $_SESSION['usersAcc'] != "Official"){
+if($_SESSION['usersAcc'] != "Coach" OR $_SESSION['usersAcc'] != "Official"){
   header("Location ../index.php?error=notauth");
 }
 
