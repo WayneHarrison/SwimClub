@@ -35,7 +35,7 @@ $uID = $_SESSION['usersID'];
         </div>
       </form>
     </div>
-    </br>
+    <br>
 
     <h1>Swimmers</h1>
     <?php $sql = "SELECT * FROM users WHERE accountType='Swimmer' OR accountType='Child'";
@@ -44,7 +44,7 @@ $uID = $_SESSION['usersID'];
       while($userResult = mysqli_fetch_array($result)):?>
         <form method="post" action="includes/addswimmer.inc.php?ID=<?php echo $userResult['id']; ?>">
           <li>Name: <?php echo $userResult['name'];?>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DOB: <?php echo $userResult['dob'];?>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button class="btn btn-outline-dark my-2 my-sm-0" name="addSwimmer" type="submit">Add</button></li></br>
+          <button class="btn btn-outline-dark my-2 my-sm-0" name="addSwimmer" type="submit">Add</button></li><br>
         </form>
         <?php endwhile;
       endif;?>

@@ -27,7 +27,7 @@ $uID = $_SESSION['usersID'];
     <div class="container">
       <h4 class="title">Your Profile</h4>
       <p class="description">Welcome <?php echo $userResult['userName'];?>.</p>
-    </br>
+    <br>
       <div class="row">
         <div class="col">
           <h5 class="title listAlign">Your Info</h5>
@@ -38,11 +38,10 @@ $uID = $_SESSION['usersID'];
             <li>Phone: <?php echo $userResult['phone']; ?></li>
             <li>Date of Birth: <?php echo $userResult['dob'];?></li>
             <li>Account Type: <?php echo $userResult['accountType'];?></li>
-            </br>
-            <?php if ($_SESSION['usersAcc'] != "Child"){
-              echo'<a href="profileedit.php"><button class="btn btn-outline-dark my-2 my-sm-0">Edit Details</button></a>';
-            } ?>
           </ul>
+            <br>
+            <a href="profileedit.php"class="btn btn-outline-dark my-2 my-sm-0">Edit Details</a>
+
 
         </div>
         <div class="col centerjumbo">

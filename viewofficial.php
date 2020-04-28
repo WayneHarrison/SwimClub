@@ -40,7 +40,7 @@ if(mysqli_num_rows($result3)) {
         <li>Phone Number: <?php echo $userResult['phone'];?></li>
         <li>Address: <?php echo $userResult['address'];?></li>
         <li>Account Type: <?php echo $userResult['accountType'];?></li>
-        </br>
+        <br>
       </ul>
     </div>
   </div>
@@ -95,7 +95,7 @@ if(mysqli_num_rows($result3)) {
     </table>
       </div>
     </div>
-  </br>
+  <br>
     <div class="row">
       <div class="col centerjumbo">
         <h5 class="title"><?php echo $userResult['name']; ?>'s race results.</h5>

@@ -18,7 +18,7 @@ $uID = $_SESSION['usersID'];?>
     <div class="row">
       <div class="col">
         <h5 class="title">Your Swimmers</h5>
-      </br>
+      <br>
         <?php  if(isset($_GET['error'])){
             if ($_GET['error'] == "SQLError"){
               echo '<p class="signuperror">Error Try Again!</p>';
@@ -30,7 +30,7 @@ $uID = $_SESSION['usersID'];?>
           else if(isset($_GET['delete'])){
             echo '<p class="signupsuccess">Successfully removed swimmer!</p>';
           }
-            ?></br>
+            ?><br>
         <table class="table">
           <thead>
             <th scope="col">Name</th>
@@ -54,8 +54,8 @@ $uID = $_SESSION['usersID'];?>
                     <button class="btn btn-outline-dark my-2 my-sm-0" name="deleteSwimmer" type="submit">Delete</button></li>
                   </form>
               </td>
-              <td><a href="addrace.php?ID=<?php echo $coachResult['id']; ?>"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</button></a></td>
-              <td><a href="view.php?ID=<?php echo $coachResult['id'];?>&p=ms"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</button></a></td>
+              <td><a href="addrace.php?ID=<?php echo $coachResult['id']; ?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</a></td>
+              <td><a href="view.php?ID=<?php echo $coachResult['id'];?>&p=ms" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</a></td>
             </tr>
 
 

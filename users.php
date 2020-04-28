@@ -43,7 +43,7 @@ $uID = $_SESSION['usersID'];
     else if(isset($_GET['delete'])){
       echo '<p class="signupsuccess">Successfully deleted user!</p>';
     }
-        ?></br>
+        ?><br>
     <table class="table">
       <thead>
         <th scope="col">Name</th>

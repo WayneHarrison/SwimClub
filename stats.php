@@ -34,11 +34,11 @@ $uID = $_SESSION['usersID'];?>
         </form>
       </div>
     </div>
-  </br></br>
+  <br><br>
     <div class="row">
       <div class="col">
         <h5 class="title">Add a Lap</h5>
-        </br>
+        <br>
       <?php  if(isset($_GET['error'])){
           if ($_GET['error'] == "missingfields"){
             echo '<p class="signuperror">Missing fields!</p>';
@@ -70,7 +70,7 @@ $uID = $_SESSION['usersID'];?>
             </div>
             <input type="text" id="dateField" name="dateField" class="form-control" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
           </div>
-          </br>
+          <br>
           <div>
             <button class="btn btn-outline-dark my-2 my-sm-0" name="timeButton" type="submit">Add Time</button>
           </div>

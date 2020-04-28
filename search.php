@@ -27,7 +27,7 @@ $searchterm = $_POST['search']?>
     while($userResult = mysqli_fetch_array($result)):?>
       <form method="post" action="includes/addswimmer.inc.php?ID=<?php echo $userResult['id']; ?>">
         <li>Name: <?php echo $userResult['name'];?>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DOB: <?php echo $userResult['dob'];?>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-outline-dark my-2 my-sm-0" name="addSwimmer" type="submit">Add</button></li></br>
+        <button class="btn btn-outline-dark my-2 my-sm-0" name="addSwimmer" type="submit">Add</button></li><br>
       </form>
       <?php endwhile;
     else: echo'<h3>No results matching your search!</h3>';
