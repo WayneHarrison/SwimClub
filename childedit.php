@@ -12,7 +12,7 @@ $result= mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)) {
   $userResult = mysqli_fetch_array($result);
 }?>
-<div class="jumbotron-fluid" align="center">
+<div class="jumbotron-fluid centerjumbo">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>

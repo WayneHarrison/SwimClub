@@ -20,6 +20,11 @@
 
 }
 
+.alignright {
+  text-align: right;
+  align-items: right;
+}
+
 .listAlign{
     text-align: left;
     margin-left: 25%;

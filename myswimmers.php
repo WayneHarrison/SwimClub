@@ -65,8 +65,8 @@ $uID = $_SESSION['usersID'];?>
         endif;?>
       </tbody>
       </table>
-        <div align="center">
-          <a href="swimmers.php"><button class="btn btn-outline-dark my-2 my-sm-0" name="addSwimmerBtn">Add Swimmer</button></a>
+        <div class="centerjumbo">
+          <a href="swimmers.php" class="btn btn-outline-dark my-2 my-sm-0">Add Swimmer</a>
         </div>
       </div>
     </div>

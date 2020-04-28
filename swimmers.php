@@ -11,7 +11,7 @@ $uID = $_SESSION['usersID'];
 //selects Results
 
   ?>
-<div class="jumbotron-fluid" align="center">
+<div class="jumbotron-fluid centerjumbo">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -20,7 +20,7 @@ $uID = $_SESSION['usersID'];
     </ol>
   </div>
   <div class="container">
-    <div align="right">
+    <div class="alignright">
       <form action="search.php" method="post">
         <div class="input-group">
           <div class="input-group-prepend">

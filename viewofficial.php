@@ -31,7 +31,7 @@ if(mysqli_num_rows($result3)) {
     </ol>
   </div>
   <div class="row">
-    <div class="col" align="center">
+    <div class="col centerjumbo">
       <h4><?php echo $userResult['name'] ?>'s Info</h4>
       <ul>
         <li>Name: <?php echo $userResult['name'];?></li>
@@ -46,7 +46,7 @@ if(mysqli_num_rows($result3)) {
   </div>
   <div class="row">
     <div class="col">
-      <h5 class="title" align="center"><?php echo $userResult['name']; ?>'s recent laps.</h5>
+      <h5 class="title centerjumbo"><?php echo $userResult['name']; ?>'s recent laps.</h5>
       <table class="table">
         <thead>
           <th scope="col">Time</th>
@@ -70,7 +70,7 @@ if(mysqli_num_rows($result3)) {
   </table>
     </div>
       <div class="col">
-        <h5 class="title" align="center"><?php echo $userResult['name']; ?>'s earlier laps.</h5>
+        <h5 class="title centerjumbo"><?php echo $userResult['name']; ?>'s earlier laps.</h5>
         <table class="table">
           <thead>
             <th scope="col">Time</th>
@@ -97,7 +97,7 @@ if(mysqli_num_rows($result3)) {
     </div>
   </br>
     <div class="row">
-      <div class="col" align="center">
+      <div class="col centerjumbo">
         <h5 class="title"><?php echo $userResult['name']; ?>'s race results.</h5>
         <table class="table">
           <thead>

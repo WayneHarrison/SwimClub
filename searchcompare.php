@@ -9,7 +9,7 @@ if (!ISSET($_SESSION['usersID'])){
 include('includes/dbh.inc.php');
 $uID = $_SESSION['usersID'];
 $searchterm = $_POST['search']?>
-<div class="jumbotron-fluid" align="center">
+<div class="jumbotron-fluid centerjumbo">
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -35,8 +35,8 @@ $searchterm = $_POST['search']?>
       <tr>
         <th scope="row"><?php echo $userResult['name'];?></th>
         <td><?php echo $userResult['dob'];?></td>
-        <td><a href="compare.php?ID=<?php echo $userResult['id']; ?>"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Compare</button></a></td>
-        <td><a href="view.php?ID=<?php echo $userResult['id'];?>&p=c"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</button></a></td>
+        <td><a href="compare.php?ID=<?php echo $userResult['id']; ?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Compare</a></td>
+        <td><a href="view.php?ID=<?php echo $userResult['id'];?>&p=c" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</a></td>
       </tr>
       <?php endwhile;
     else: echo'<h3>No results matching your search!</h3>';

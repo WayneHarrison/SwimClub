@@ -24,7 +24,7 @@ if(mysqli_num_rows($result3)) {
   </div>
   <div class="container">
     <div class="row">
-      <div class="col" align="center">
+      <div class="col centerjumbo">
         <h3>Comparison</h3>
         <h4><?php echo $userResult['name'] ?>'s Info</h4>
         <ul>

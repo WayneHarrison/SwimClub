@@ -8,7 +8,7 @@ if (!ISSET($_SESSION['usersID'])){
 include("includes/dbh.inc.php");
 
 $uID = $_SESSION['usersID'];?>
-<div class="jumbotron-fluid" align="center">
+<div class="jumbotron-fluid centerjumbo">
     <div aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -106,7 +106,7 @@ $uID = $_SESSION['usersID'];?>
       </div>
   </div>
   <div class="row">
-    <div class="col" align="center">
+    <div class="col centerjumbo">
       <h5 class="title">Race results.</h5>
       <table class="table">
         <thead>

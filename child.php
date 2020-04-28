@@ -64,7 +64,7 @@ $uID = $_SESSION['usersID'];}?>
         endif;?>
       </tbody>
       </table>
-        <div align="center">
+        <div class="centerjumbo">
           <a href="addChild.php"><button class="btn btn-outline-dark my-2 my-sm-0">Add Child</button></a>
         </div>
       </div>

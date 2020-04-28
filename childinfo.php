@@ -11,7 +11,7 @@ if($_SESSION['usersAcc'] != "Parent"){
   $cID = intval($_GET['ID']);
  ?>
 
- <div class="jumbotron-fluid" align="center">
+ <div class="jumbotron-fluid centerjumbo">
      <div aria-label="breadcrumb">
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="index.php">Home</a></li>

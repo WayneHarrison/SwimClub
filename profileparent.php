@@ -17,7 +17,7 @@ $uID = $_SESSION['usersID'];
   //selects Results
   ?>
 
-  <div class="jumbotron-fluid" align="center">
+  <div class="jumbotron-fluid centerjumbo">
     <div aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -39,7 +39,7 @@ $uID = $_SESSION['usersID'];
             <li>Date of Birth: <?php echo $userResult['dob'];?></li>
             <li>Account Type: <?php echo $userResult['accountType'];?></li>
             </br>
-            <a href="profileedit.php"><button class="btn btn-outline-dark my-2 my-sm-0">Edit Details</button></a>
+            <a href="profileedit.php" class="btn btn-outline-dark my-2 my-sm-0">Edit Details</a>
           </ul>
         </div>
         <div class="col">

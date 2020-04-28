@@ -17,7 +17,7 @@ $uID = $_SESSION['usersID'];
   //selects Results
   ?>
 
-  <div class="jumbotron-fluid" align="center">
+  <div class="jumbotron-fluid centerjumbo">
     <div aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -45,7 +45,7 @@ $uID = $_SESSION['usersID'];
           </ul>
 
         </div>
-        <div class="col" align="center">
+        <div class="col centerjumbo">
           <h5 class="title">Recent race results.</h5>
           <table class="table">
             <thead>
@@ -67,7 +67,7 @@ $uID = $_SESSION['usersID'];
                 <td><?php echo $lapResult2['rdate'];?></td>
                 <td><?php echo $lapResult2['laps'];?> laps.</td>
                 <td><?php echo $lapResult2['fastest'];?> seconds.</td>
-                <td><a href="viewofficial.php?ID=<?php echo $lapResult2['userID'];?>&p=pfo"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View User</button></a></td>
+                <td><a href="viewofficial.php?ID=<?php echo $lapResult2['userID'];?>&p=pfo" class="btn btn-outline-dark my-2 my-sm-0">View User</a></td>
               </tr>
             <?php endwhile;
           else: echo '<td>No recent races.</td>';

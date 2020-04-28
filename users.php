@@ -67,8 +67,8 @@ $uID = $_SESSION['usersID'];
                 <button class="btn btn-outline-dark my-2 my-sm-0" name="deleteUser" type="submit" onclick="return confirm('Are you sure?');">Delete</button></li>
               </form>
           </td>
-          <td><a href="addrace.php?ID=<?php echo $coachResult['id'];?>"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</button></a></td>
-          <td><a href="viewofficial.php?ID=<?php echo $coachResult['id'];?>&p=u"><button class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</button></a></td>
+          <td><a href="addrace.php?ID=<?php echo $coachResult['id'];?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</a></td>
+          <td><a href="viewofficial.php?ID=<?php echo $coachResult['id'];?>&p=u" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</a></td>
         </tr>
 
 
