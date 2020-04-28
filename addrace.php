@@ -2,7 +2,7 @@
 $title = 'AddRace';
 include("includes/header.php");
 if(($_SESSION['usersAcc'] != "Coach") || ($_SESSION['usersAcc'] != "Official")){
-  header("Location ../index.php?error=notauth");
+  header("Location:index.php?error=notauth");
 }
 include("includes/dbh.inc.php");
 $uID = $_GET['ID'];?>
