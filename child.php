@@ -21,7 +21,7 @@ $uID = $_SESSION['usersID'];}?>
     <div class="row">
       <div class="col">
         <h5 class="title">Registered Children</h5>
-      </br>
+      <br/>
         <?php
         if (isset($_GET['signup'])) {
           echo '<p class="signupsuccess">Sign up successful!</p>';
@@ -29,7 +29,7 @@ $uID = $_SESSION['usersID'];}?>
         else if(isset($_GET['delete'])){
           echo '<p class="signupsuccess">Successfully deleted child!</p>';
         }
-            ?></br>
+            ?><br/>
         <table class="table">
           <thead>
             <th scope="col">Name</th>
@@ -65,7 +65,7 @@ $uID = $_SESSION['usersID'];}?>
       </tbody>
       </table>
         <div class="centerjumbo">
-          <a href="addChild.php"><button class="btn btn-outline-dark my-2 my-sm-0">Add Child</button></a>
+          <a href="addChild.php" class="btn btn-outline-dark my-2 my-sm-0">Add Child</a>
         </div>
       </div>
     </div>
