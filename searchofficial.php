@@ -14,7 +14,7 @@ $searchterm = $_POST['search']?>
   <div aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-      <li class="breadcrumb-item"><a href="Users.php">Statistics</a></li>
+      <li class="breadcrumb-item"><a href="users.php">Statistics</a></li>
       <li class="breadcrumb-item active" aria-current="page">Search</li>
     </ol>
   </div>

@@ -1,11 +1,12 @@
 <?php
 $title="Search";
 include('includes/dbh.inc.php');
+include('includes/header.php');
 if (!ISSET($_SESSION['usersID'])){
   header("Location:index.php?error=notauth");
 }
 
-include('includes/header.php');
+
 
 $uID = $_SESSION['usersID'];
 $searchterm = $_POST['search']?>

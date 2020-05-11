@@ -31,6 +31,7 @@ if (!ISSET($_SESSION['usersID'])){
       <li class="breadcrumb-item active" aria-current="page">Edit</li>
     </ol>
   </div>
+  </div>
   <div class="container">
     <h1>Profile Edit</h1>
     <div>
@@ -57,15 +58,15 @@ if (!ISSET($_SESSION['usersID'])){
         <div class="row">
           <div class="col">
             <div class="form-group">
-              <label for="addressField">Address</label>
+              <label for="editAddress">Address</label>
               <input type="text" class="form-control" id="editAddress" placeholder="Address" name="editAddress" value="<?php echo $userResult['address']?>">
             </div>
             <div class="form-group">
-              <label for="pcField">Postcode</label>
+              <label for="editPostcode">Postcode</label>
               <input type="text" class="form-control" id="editPostcode" placeholder="Postcode" name="editPostcode" value="<?php echo $userResult['postcode']?>">
             </div>
             <div class="form-group">
-              <label for="phoneField">Phone Number</label>
+              <label for="editPhone">Phone Number</label>
               <input type="text" class="form-control" id="editPhone" placeholder="Phone" name="editPhone" value="<?php echo $userResult['phone']?>">
             </div>
             <div class="form-group">
