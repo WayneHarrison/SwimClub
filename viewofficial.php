@@ -40,8 +40,8 @@ if(mysqli_num_rows($result3)) {
         <li>Phone Number: <?php echo $userResult['phone'];?></li>
         <li>Address: <?php echo $userResult['address'];?></li>
         <li>Account Type: <?php echo $userResult['accountType'];?></li>
-        <br>
       </ul>
+      <br>
     </div>
   </div>
   <div class="row">

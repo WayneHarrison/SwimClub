@@ -64,11 +64,11 @@ $uID = $_SESSION['usersID'];
           <th scope="row"><?php echo $coachResult['name'];?></th>
           <td><?php echo $coachResult['dob'];?></td>
           <td><form method="post" action="includes/remove.inc.php?ID=<?php echo $coachResult['id']; ?>">
-                <button class="btn btn-outline-dark my-2 my-sm-0" name="deleteUser" type="submit" onclick="return confirm('Are you sure?');">Delete</button></li>
+                <button class="btn btn-outline-dark my-2 my-sm-0" name="deleteUser" type="submit" onclick="return confirm('Are you sure?');">Delete</button>
               </form>
           </td>
-          <td><a href="addrace.php?ID=<?php echo $coachResult['id'];?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">Add Results</a></td>
-          <td><a href="viewofficial.php?ID=<?php echo $coachResult['id'];?>&p=u" class="btn btn-outline-dark my-2 my-sm-0" name="addRace" type="submit">View</a></td>
+          <td><a href="addrace.php?ID=<?php echo $coachResult['id'];?>" class="btn btn-outline-dark my-2 my-sm-0" name="addRace">Add Results</a></td>
+          <td><a href="viewofficial.php?ID=<?php echo $coachResult['id'];?>&p=u" class="btn btn-outline-dark my-2 my-sm-0" name="addRace">View</a></td>
         </tr>
 
 

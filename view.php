@@ -43,8 +43,8 @@ if(mysqli_num_rows($result3)) {
         <li>Name: <?php echo $userResult['name'];?></li>
         <li>Email: <?php echo $userResult['email'];?></li>
         <li>Account Type: <?php echo $userResult['accountType'];?></li>
-        <br>
       </ul>
+    <br />
     </div>
   </div>
   <div class="row">
